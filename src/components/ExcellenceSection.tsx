@@ -1,0 +1,45 @@
+import { Button } from "@/components/ui/button";
+import molecularBg from "@/assets/molecular-background.jpg";
+
+const ExcellenceSection = () => {
+  return (
+    <section className="py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <div className="bg-card rounded-lg p-6 shadow-lg">
+              <div 
+                className="h-64 bg-cover bg-center rounded-lg relative"
+                style={{ backgroundImage: `url(${molecularBg})` }}
+              >
+                <div className="absolute inset-0 bg-medical/80 rounded-lg flex items-center justify-center">
+                  <div className="text-center text-medical-foreground">
+                    <h3 className="text-2xl font-bold mb-2">Join the Technology Revolution:</h3>
+                    <p className="text-lg">AI-Powered Drug Discovery</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Elevating Global Health
+              Through <span className="text-medical">Excellence</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              We leverage cutting-edge technology and stringent quality standards to deliver 
+              pharmaceutical solutions that improve lives worldwide. Our commitment to innovation 
+              drives us to push the boundaries of medical science.
+            </p>
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ExcellenceSection;
