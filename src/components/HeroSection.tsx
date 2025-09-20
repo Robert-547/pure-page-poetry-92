@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-medical-lab.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center bg-gradient-to-r from-secondary to-muted">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-r from-secondary to-muted">
       <div className="absolute inset-0 bg-black/20"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -27,10 +27,10 @@ const HeroSection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground hover-scale">
               Learn More
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground hover-scale">
               View Facility
             </Button>
           </div>

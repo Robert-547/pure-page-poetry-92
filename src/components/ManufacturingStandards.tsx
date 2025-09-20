@@ -3,7 +3,7 @@ import globalNetwork from "@/assets/global-network.jpg";
 
 const ManufacturingStandards = () => {
   return (
-    <section className="py-16">
+    <section className="min-h-screen flex items-center py-16">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>

@@ -22,7 +22,7 @@ const PharmaceuticalInsights = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="min-h-screen flex items-center py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -34,14 +34,14 @@ const PharmaceuticalInsights = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {articles.map((article, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer">
-              <CardHeader>
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer hover-lift h-full flex flex-col">
+              <CardHeader className="flex-grow">
                 <div className="text-sm text-medical font-medium mb-2">{article.category}</div>
                 <CardTitle className="text-base font-semibold text-foreground leading-tight">
                   {article.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="mt-auto">
                 <p className="text-sm text-muted-foreground">Read More</p>
               </CardContent>
             </Card>

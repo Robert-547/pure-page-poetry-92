@@ -36,7 +36,7 @@ const TrustedSolutions = () => {
   ];
 
   return (
-    <section className="py-16 bg-secondary/30">
+    <section className="min-h-screen flex items-center py-16 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -52,7 +52,7 @@ const TrustedSolutions = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow hover-lift">
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-foreground mb-2">{achievement.title}</h3>
                 <p className="text-sm font-medium text-medical mb-3">{achievement.subtitle}</p>
