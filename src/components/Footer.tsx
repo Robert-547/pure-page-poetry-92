@@ -1,6 +1,10 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const Footer = () => {
+  const sectionRef = useScrollAnimation();
+
   return (
-    <footer className="min-h-screen flex items-center bg-foreground text-background py-12">
+    <footer ref={sectionRef} className="min-h-screen flex items-center bg-foreground text-background py-12 section-animate">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>

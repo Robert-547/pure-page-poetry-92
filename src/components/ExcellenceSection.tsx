@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import molecularBg from "@/assets/molecular-background.jpg";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ExcellenceSection = () => {
+  const sectionRef = useScrollAnimation();
+
   return (
-    <section className="min-h-screen flex items-center py-16">
+    <section ref={sectionRef} className="min-h-screen flex items-center py-16 section-animate">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">

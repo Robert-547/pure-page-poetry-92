@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const PharmaceuticalInsights = () => {
+  const sectionRef = useScrollAnimation();
+  
   const articles = [
     {
       title: "A Deep Dive into Pharma Third-Party Manufacturing for Emerging Medicines",
@@ -22,7 +25,7 @@ const PharmaceuticalInsights = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center py-16">
+    <section ref={sectionRef} className="min-h-screen flex items-center py-16 section-animate">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -34,7 +37,7 @@ const PharmaceuticalInsights = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {articles.map((article, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer hover-lift h-full flex flex-col">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer hover-lift h-full flex flex-col card-animate">
               <CardHeader className="flex-grow">
                 <div className="text-sm text-medical font-medium mb-2">{article.category}</div>
                 <CardTitle className="text-base font-semibold text-foreground leading-tight">

@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-medical-lab.jpg";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const HeroSection = () => {
+  const sectionRef = useScrollAnimation();
+
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-r from-secondary to-muted">
+    <section ref={sectionRef} className="relative min-h-screen flex items-center bg-gradient-to-r from-secondary to-muted section-animate">
       <div className="absolute inset-0 bg-black/20"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

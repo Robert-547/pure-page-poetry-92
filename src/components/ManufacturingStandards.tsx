@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import globalNetwork from "@/assets/global-network.jpg";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ManufacturingStandards = () => {
+  const sectionRef = useScrollAnimation();
+
   return (
-    <section className="min-h-screen flex items-center py-16">
+    <section ref={sectionRef} className="min-h-screen flex items-center py-16 section-animate">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
