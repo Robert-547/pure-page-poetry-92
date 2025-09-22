@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className="scroll-container">
       <Header />
-      <div className="scroll-section">
+      <div className="scroll-section pt-20">
         <HeroSection />
       </div>
       <div className="scroll-section">

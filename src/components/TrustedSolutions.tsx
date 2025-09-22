@@ -48,17 +48,17 @@ const TrustedSolutions = () => {
           <p className="text-xl text-muted-foreground mb-8">
             Solutions Worldwide
           </p>
-          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground hover-glow">
             View more about our progress
           </Button>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow hover-lift card-animate">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow hover-glow card-animate">
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-foreground mb-2">{achievement.title}</h3>
-                <p className="text-sm font-medium text-medical mb-3">{achievement.subtitle}</p>
+                <p className="text-sm font-medium text-primary mb-3">{achievement.subtitle}</p>
                 <p className="text-muted-foreground text-sm">{achievement.description}</p>
               </CardContent>
             </Card>

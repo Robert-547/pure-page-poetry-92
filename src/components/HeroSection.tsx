@@ -14,8 +14,8 @@ const HeroSection = () => {
       ></div>
       <div className="relative container mx-auto px-4 py-20">
         <div className="max-w-2xl text-left">
-          <div className="mb-6">
-            <div className="inline-flex items-center bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="mb-6 card-animate">
+            <div className="inline-flex items-center bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm mb-4 hover-glow">
               🏆 US FDA APPROVAL
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -29,11 +29,11 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground hover-scale">
+          <div className="flex flex-col sm:flex-row gap-4 card-animate">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground hover-glow">
               Learn More
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground hover-scale">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground hover-glow">
               View Facility
             </Button>
           </div>
