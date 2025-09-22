@@ -55,7 +55,7 @@ const TrustedSolutions = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {achievements.map((achievement, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow hover-glow card-animate">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow card-hover card-animate">
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-foreground mb-2">{achievement.title}</h3>
                 <p className="text-sm font-medium text-primary mb-3">{achievement.subtitle}</p>

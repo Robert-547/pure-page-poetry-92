@@ -38,9 +38,9 @@ const TherapeuticAreas = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {therapeuticAreas.map((area, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow h-full hover-lift card-animate">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow h-full card-float card-animate">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-medical">{area.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">{area.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{area.description}</p>
@@ -55,9 +55,9 @@ const TherapeuticAreas = () => {
             patients' lives globally. Our diverse portfolio spans multiple therapeutic areas, 
             ensuring comprehensive healthcare solutions.
           </p>
-          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            Explore Product Range
-          </Button>
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground hover-glow">
+              Explore Product Range
+            </Button>
         </div>
       </div>
     </section>

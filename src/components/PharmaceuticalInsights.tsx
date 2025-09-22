@@ -37,9 +37,9 @@ const PharmaceuticalInsights = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {articles.map((article, index) => (
-            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer hover-lift h-full flex flex-col card-animate">
+            <Card key={index} className="bg-card hover:shadow-lg transition-shadow cursor-pointer card-bounce h-full flex flex-col card-animate">
               <CardHeader className="flex-grow">
-                <div className="text-sm text-medical font-medium mb-2">{article.category}</div>
+                <div className="text-sm text-primary font-medium mb-2">{article.category}</div>
                 <CardTitle className="text-base font-semibold text-foreground leading-tight">
                   {article.title}
                 </CardTitle>
@@ -52,9 +52,9 @@ const PharmaceuticalInsights = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            View More
-          </Button>
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground hover-glow">
+              View More
+            </Button>
         </div>
       </div>
     </section>

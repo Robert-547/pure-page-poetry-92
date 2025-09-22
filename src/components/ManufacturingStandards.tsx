@@ -20,14 +20,14 @@ const ManufacturingStandards = () => {
               ensure that every product meets the strictest quality and safety standards. 
               We are committed to advancing healthcare through innovative manufacturing processes.
             </p>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground hover-glow">
               Read More
             </Button>
           </div>
           
           <div className="relative">
             <div 
-              className="h-80 bg-cover bg-center rounded-lg shadow-lg"
+              className="h-80 bg-cover bg-center rounded-lg shadow-lg hover-tilt card-animate"
               style={{ backgroundImage: `url(${globalNetwork})` }}
             >
               <div className="absolute inset-0 bg-primary/20 rounded-lg"></div>
